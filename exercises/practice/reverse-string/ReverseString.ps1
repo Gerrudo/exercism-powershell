@@ -22,8 +22,9 @@ Function Get-ReverseString {
     [CmdletBinding()]
     Param(
         [Parameter(Position=1, ValueFromPipeline=$true)]
-        [string]$Forward
+        [string]$forward
 	)
-	
-	Throw "Function not implemented"
+    $split = $forward.ToCharArray()
+    [array]::Reverse($split)
+    return -join $split
 }
