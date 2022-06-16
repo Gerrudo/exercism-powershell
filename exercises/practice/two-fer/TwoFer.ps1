@@ -23,8 +23,8 @@ Function Get-TwoFer() {
     [CmdletBinding()]
     Param(
         [Parameter(Position = 0)]
-        [string]$Name = "you"
+        [string]$Name
     )
-    if ([string]::IsNullOrEmpty($Name)) { $Name = "you" }
+    if ([string]::IsNullOrEmpty($Name)) { $Name = "you" } 
     return "One for $Name, one for me"
 }
