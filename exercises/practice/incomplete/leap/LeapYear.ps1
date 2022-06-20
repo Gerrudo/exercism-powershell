@@ -25,6 +25,5 @@ function Test-LeapYear {
     Returns True
     #>
     param( [int]$year )
-
-    Throw "Exercise not implemented"
+    if ($year % 4 -eq 0 -and $year % 100 -gt 0 -or $year % 400 -eq 0) { return $true } else { return $false }
 }
