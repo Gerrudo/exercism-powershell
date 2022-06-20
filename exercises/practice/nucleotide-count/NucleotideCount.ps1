@@ -22,8 +22,17 @@ Function Get-NucleotideCount() {
     #>
     [CmdletBinding()]
     Param(
-        [string]$Strand
+        [string]$strand
     )
-
-    Throw "Not implemented exception"
+    [int]$a = [int]$c = [int]$g = [int]$t = 0
+    foreach ($nucleotide in $strand.ToCharArray()) {
+        switch ($nucleotide) {
+            "A" {$a++}
+            "C" {$c++}
+            "G" {$g++}
+            "T" {$t++}
+            default {throw}
+        }
+    }
+    return [string]"A:$a C:$c G:$g T:$t"
 }
