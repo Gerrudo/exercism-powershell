@@ -7,7 +7,7 @@ Describe "Get-SumOfMultiples Tests" {
 		@{ Multiples = @(3, 5); Limit = 1; ExpectedResult = 0 },
 		@{ Multiples = @(3, 5); Limit = 4; ExpectedResult = 3 },
 		@{ Multiples = @(3); Limit = 7; ExpectedResult = 9 },
-		@{ Multiples = @(3, 5); Limit = 10; ExpectedResult = 23 },
+		@{ Multiples = @(3, 5); Limit = 10; ExpectedResult = 23 }
 		@{ Multiples = @(3, 5); Limit = 100; ExpectedResult = 2318 },
 		@{ Multiples = @(3, 5); Limit = 1000; ExpectedResult = 233168 },
 		@{ Multiples = @(7, 13, 17); Limit = 20; ExpectedResult = 51 },

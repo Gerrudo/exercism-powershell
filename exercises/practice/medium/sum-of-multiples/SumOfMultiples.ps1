@@ -21,9 +21,19 @@ Function Get-SumOfMultiples {
     #>
     [CmdletBinding()]
     Param(
-        [int[]]$Multiples,
-        [int]$Limit
+        [int[]]$multiples,
+        [int]$limit
     )
-
-    Throw "Function not implemented"
+    [array]$sum = @()
+    foreach ($factor in $multiples) {
+        [int]$count = 1
+        [int]$multiple = 0
+        while ($multiple -lt $limit) {
+            [int]$multiple = $count * $factor
+            if ($multiple -ge $limit) { break }
+            if ($sum -notcontains $multiple) { $sum += $multiple }
+            $count++
+        }
+    } 
+    return ($sum | measure-object -sum).sum
 }
