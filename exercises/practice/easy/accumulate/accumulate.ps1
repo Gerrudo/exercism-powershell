@@ -32,6 +32,5 @@ Function Get-Accumulation() {
         [PSObject[]]$List,
         [scriptblock]$Func
     )
-
-    Throw "Function not implemented"
+    Invoke-Command -Scriptblock $Func -ArgumentList @(,$List)
 }
