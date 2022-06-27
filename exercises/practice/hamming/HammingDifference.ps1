@@ -1,4 +1,4 @@
-function Get-HammingDifference([string]$strand1, [string]$strand2) {
+function Get-HammingDifference {
     <#
     .SYNOPSIS
     Calculate the Hamming difference between two DNA strands.
@@ -25,12 +25,11 @@ function Get-HammingDifference([string]$strand1, [string]$strand2) {
     
     This will return a difference of 7.
     #>
-    if ($strand1.Length -ne $strand2.Length) { throw "Left and right strands must be of equal length." }
-    [int]$matchCount = 0
-    $strand1Array = $strand1.ToCharArray()
-    $strand2Array = $strand2.ToCharArray()
-    for ($i = 0; $i -lt $strand1Array.Count; $i++) {
-       if ($strand1Array[$i] -ne $strand2Array[$i]) { $matchCount++ }
-    }
-    return $matchCount
+    [CmdletBinding()]
+    Param(
+        [string]$Strand1,
+        [string]$Strand2
+        
+    )
+    Throw "Exercise not implimented!"
 }

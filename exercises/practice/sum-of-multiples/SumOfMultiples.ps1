@@ -21,17 +21,8 @@ Function Get-SumOfMultiples {
     #>
     [CmdletBinding()]
     Param(
-        [int[]]$multiples,
-        [int]$limit
+        [int[]]$Multiples,
+        [int]$Limit
     )
-    [int]$sum = 0
-    for ([int]$count = 1; $count -lt $limit; $count++) {
-        foreach ($multiple in $multiples) {
-            if ($count % $multiple -eq 0) {
-                $sum += $count
-                break
-            }
-        }
-    }
-    return $sum
+    Throw "Exercise not implimented!"
 }

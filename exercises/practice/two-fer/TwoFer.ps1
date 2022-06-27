@@ -1,4 +1,4 @@
-Function Get-TwoFer() {
+Function Get-TwoFer {
     <#
     .SYNOPSIS
     "Two-fer" is short for two for one. One for you and one for me.
@@ -25,6 +25,5 @@ Function Get-TwoFer() {
         [Parameter(Position = 0)]
         [string]$Name
     )
-    if ([string]::IsNullOrEmpty($Name)) { $Name = "you" } 
-    return "One for $Name, one for me"
+    Throw "Exercise not implimented!"
 }

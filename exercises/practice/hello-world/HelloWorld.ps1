@@ -10,5 +10,5 @@ function Get-HelloWorld {
     Get-HelloWorld
     #>	
     
-    return "Hello, World!"
+    Throw "Exercise not implimented!"
 }

@@ -1,4 +1,4 @@
-Function Invoke-CollatzConjecture() {
+Function Invoke-CollatzConjecture {
     <#
     .SYNOPSIS
     Calculate the number of steps to reach 1 using the Collatz conjecture.
@@ -17,16 +17,5 @@ Function Invoke-CollatzConjecture() {
         [Int64]$Number
         
     )
-    if ($Number -le 0) { throw "error: Only positive numbers are allowed" }
-    [int]$steps = 0
-    while ($Number -ne 1) {
-        if ($Number % 2 -eq 0) { 
-            $Number =/ 2
-        }
-        else {
-            $Number = ($Number * 3) + 1 
-        }
-        $steps++
-    }
-    return $steps
+    Throw "Exercise not implimented!"
 }

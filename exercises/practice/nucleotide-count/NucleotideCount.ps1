@@ -1,4 +1,4 @@
-Function Get-NucleotideCount() {
+Function Get-NucleotideCount {
     <#
     .SYNOPSIS
     Given a single stranded DNA string, compute how many times each nucleotide occurs in the string.
@@ -22,17 +22,7 @@ Function Get-NucleotideCount() {
     #>
     [CmdletBinding()]
     Param(
-        [string]$strand
+        [string]$Strand
     )
-    [int]$a = [int]$c = [int]$g = [int]$t = 0
-    foreach ($nucleotide in $strand.ToCharArray()) {
-        switch ($nucleotide) {
-            "A" {$a++}
-            "C" {$c++}
-            "G" {$g++}
-            "T" {$t++}
-            default {throw}
-        }
-    }
-    return [string]"A:$a C:$c G:$g T:$t"
+    Throw "Exercise not implimented!"
 }
