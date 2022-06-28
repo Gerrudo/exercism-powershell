@@ -13,9 +13,11 @@ In this exercise, we'll want to replace parts of the sentece with a name, which 
         - if, ifelse and else
         - How to make use of boolean variables in conditional statements
         - How $null works
+        
     - String Methods
         - What is meant by a String Method?
         - IsNullOrEmpty
+
     - String Interpolation/String Templating
         - How to call variables within a string
         - How you can use ```{ Code Blocks }``` inside of a string
