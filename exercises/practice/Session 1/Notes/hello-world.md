@@ -1,12 +1,12 @@
-#Hello World
+# Hello World
 
 The Hello World exercise is the first in a series of exercises based on test driven development.
 
-##Objectives
+## Objectives
     - Modify the provided code so that it produces the string "Hello, World!".
     - Run the test suite and make sure that it succeeds.
 
-##Topics Covered
+## Topics Covered
     - Functions
         - How to declare functions
         - How to use functions
