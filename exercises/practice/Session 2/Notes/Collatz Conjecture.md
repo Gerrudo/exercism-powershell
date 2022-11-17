@@ -10,8 +10,8 @@ The function that will test for Collatz Conjecture, will expect to recieve the n
     4 divided by 2 equals 2, 2 divided by 2 equals 1. You can see we divided twice to get 1, so we'd return our steps as 2.
 
 ## Objectives
-* Modify the provided code so that it produces the string "One for you, one for me.", where "you" is replaced by a name provided by the tests
-* If no name is provided, the code should instead return, "you".
+* Modify the provided code so that it returns the number of steps it took to reach 1 while performing Collatz Conjecture.
+* Should throw an error if given an odd integer.
 * Run the test suite and make sure that it succeeds.
 
 ## Topics Covered
